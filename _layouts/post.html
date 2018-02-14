@@ -55,11 +55,11 @@ layout: default
       </div>
     </div>
   </section>
-
-  {% if site.enable_disqus and site.disqus_shortname %}
-    {% include comments.html %}
-  {% endif %}
-
+  <div class="post">
+    {% if site.enable_disqus and site.disqus_shortname %}
+      {% include comments.html %}
+    {% endif %}
+  </div>
 </article>
 
 {% if page.previous.url %}
