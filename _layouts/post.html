@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="section-padding--lg mast rellax" data-rellax-speed="-4">
@@ -31,11 +32,14 @@ layout: default
 
   <section class="section-padding bg-grey" itemprop="articleBody">
     <div class="post">
+      {% include ads/top-post.html %}
       {{ content }}
+      {% include ads/bottom-post.html %}
     </div>
+
   </section>
 
-  <section class="profile">
+  <!-- <section class="profile">
     <div class="profile__card">
       <div class="profile__img">
         <figure class="absolute-bg" style="background-image: url('{{ site.profile_img }}');"></figure>
@@ -54,13 +58,21 @@ layout: default
         {% endif %}
       </div>
     </div>
-  </section>
+  </section> -->
   <div class="post">
-    {% if site.enable_disqus and site.disqus_shortname %}
+    <div class="rel-ad">
+      {% include related.html post=page %}
+      {% include ads/bottom-square.html %}
+    </div>
+  </div>
+  <div class="post">
+    {% if site.enable_disqus and site.disqus_shortname and page.comments %}
       {% include comments.html %}
     {% endif %}
   </div>
 </article>
+
+
 
 {% if page.previous.url %}
   <section class="next">
