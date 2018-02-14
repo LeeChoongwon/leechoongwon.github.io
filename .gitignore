@@ -1,0 +1,51 @@
+_site
+.sass-cache
+.jekyll-metadata
+_drafts/*
+/_drafts?
+_drafts/
+*/_drafts/
+_drafts/Reference.md
+/assets/posts/draft/
+
+/_layouts/blog.back2.html
+
+/assets/posts/filetree
+
+/.buildpath
+/build/
+*/archive/
+
+
+__MACOSX
+.DS_Store
+
+.project
+.settings
+.classpath
+.sass-cache/
+
+# OS generated files #
+######################
+*/.DS_Store
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
