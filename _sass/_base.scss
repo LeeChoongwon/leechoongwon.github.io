@@ -5,10 +5,8 @@ $font-header: "Spoqa Han Sans", sans-serif;
 $font-body: "Spoqa Han Sans", sans-serif;
 $font-post: "Spoqa Han Sans", sans-serif;
 
-// $color-alpha: #84aff4;
-$color-alpha: #5F4B8B;
-// $color-alpha--light: #b2d0ff;
-$color-alpha--light: #dfd3f5;
+$color-alpha: #84aff4;
+$color-alpha--light: #b2d0ff;
 
 $color-black: #0a0a0a;
 $color-grey: #f8f9f9;
@@ -16,7 +14,7 @@ $color-white: #fff;
 
 $mq-xs: 20em;
 $mq-sm: 30em;
-$mq-md: 728px;
+$mq-md: 54em;
 $mq-lg: 64em;
 $mq-xl: 76.5em;
 $mq-xxl: 114em;
@@ -160,7 +158,7 @@ pre,
 code {
     overflow: auto;
     border-radius: 3px;
-    font-size: 15px;
+    font-size: 1em;
     border: 1px solid $color-alpha;
     > code {
       border: none;
@@ -185,7 +183,7 @@ code {
 
 hr {
   width: 70%;
-  border: 0;
-  height: 1px;
+  border: 0; 
+  height: 1px; 
   background-image: linear-gradient(left, #f0f0f0, #8c8c8c, #f0f0f0);
 }
