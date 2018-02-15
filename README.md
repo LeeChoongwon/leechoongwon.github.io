@@ -28,13 +28,13 @@ I made everything as easy as possible to edit. Most things can be found in the `
 
 #### Site Settings
     email: 
-    baseurl: ""
+    url: ""
     paginate: 5
     paginate_path: "/blog/page-:num"
     google_analytics: UA—XXXXXXXX-X
 
 * ````email```` - Your email for the contact card and the footer
-* ````baseurl```` - Path of blog if adding this on to another website
+* ````url```` - Path of blog if adding this on to another website
 * ````paginate```` - Number of blog posts per page
 * ````paginate_path```` - URL structure of paginated pages
 * ````google_analytics```` - Option field to replace with correct Google Analytics code
