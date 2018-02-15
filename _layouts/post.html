@@ -10,9 +10,9 @@ layout: default
       <span>Back to Posts</span>
     </a>
     {% if page.image-sm %}
-    <figure class="absolute-bg mast__img" style="background-image: url('../../assets/posts/{{ page.image-sm }}');"></figure>
+    <figure class="absolute-bg mast__img" style="background-image: url('{{ site.url }}/assets/posts/{{ page.image-sm }}');"></figure>
     {% else %}
-    <figure class="absolute-bg mast__img" style="background-image: url('../../assets/img/categories/header/{{ page.categories | first }}.png');"></figure>
+    <figure class="absolute-bg mast__img" style="background-image: url('{{ site.url }}/assets/img/categories/header/{{ page.categories | first }}.png');"></figure>
     {% endif %}
     <div class="mast__container">
       <span><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></span>
@@ -20,7 +20,7 @@ layout: default
       {% if page.categories.size > 0 %}
         <span>Posted in
           {% for category in page.categories %}
-            <a class="nav--white--cat" style="color: #5F4B8B" href="{{ site.baseurl }}/category/{{ category | downcase | slugify }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}
+            <a class="nav--white--cat" style="color: #5F4B8B" href="{{ site.url }}/category/{{ category | downcase | slugify }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}
           {% endfor %}
         </span>
       {% endif %}
