@@ -206,7 +206,6 @@
 
   &__header {
     color: $color-alpha;
-    overflow: hidden;
   }
 
   &__count {
@@ -313,7 +312,7 @@
     justify-content: flex-end;
     height: 100%;
     width: 90%;
-    margin: 20px auto 0;
+    margin: 0 auto;
   }
 
   h1 {
@@ -432,16 +431,16 @@
     }
   }
 
-  /*p:first-child {
+  p:first-child {
     font-size: 1.25em;
-  }*/
+  }
 
   a {
     border-bottom: 1px solid $color-alpha;
   }
 
   img {
-    margin: 0.5em 0;
+    margin: 2em 0;
   }
 
   figure {

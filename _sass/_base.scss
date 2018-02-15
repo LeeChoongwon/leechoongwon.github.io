@@ -1,12 +1,12 @@
 /**
  * Base Variables
  */
-$font-header: "Spoqa Han Sans", sans-serif;
-$font-body: "Spoqa Han Sans", sans-serif;
-$font-post: "Spoqa Han Sans", sans-serif;
+$font-header: 'Space Mono', monospace;
+$font-body: 'Inconsolata', monospace;
+$font-post: 'Lora', serif;
 
-$color-alpha: #84aff4;
-$color-alpha--light: #b2d0ff;
+$color-alpha: #9f8f68;
+$color-alpha--light: #f5f3ef;
 
 $color-black: #0a0a0a;
 $color-grey: #f8f9f9;
@@ -30,7 +30,7 @@ body {
   font-family: $font-body;
   font-feature-settings: 'liga' 0;
   font-size: 100%;
-  line-height: 1.7;
+  line-height: 1.6;
 
   @media (min-width: $mq-xs) {
     font-size: 102.5%;
@@ -61,11 +61,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 
   font-family: $font-header;
+  line-height: 1.1;
 }
 
 h1 {
   $fontSize: 2.5em;
-  margin-bottom: 0.55em;
 
   @media (min-width: $mq-md) {
     font-size: $fontSize;
@@ -77,8 +77,7 @@ h1 {
 }
 
 h2 {
-  margin-top: 0.75em;
-  margin-bottom: 0.35em;
+  margin-bottom: 0.25em;
 
   font-size: 1.75em;
 
@@ -88,13 +87,13 @@ h2 {
 }
 
 h3 {
-  margin-bottom: 0.20em;
+  margin-bottom: 0.1em;
 
   font-size: 1.5em;
 }
 
 h4 {
-  margin-bottom: 0.15em;
+  margin-bottom: 0.1em;
 
   font-size: 1.25em;
 }
@@ -120,20 +119,17 @@ figure {
 }
 
 img {
-  display: inline-block;
+  display: block;
+  width: 100%;
   max-width: 100%;
 }
 
 blockquote {
   margin: 2em 0;
-  padding-left: 1em;
-  border-left: 2px solid $color-alpha;
 
   font-family: $font-header;
-  font-weight: 300;
-  font-size: 1em;
-  font-style: italic;
-  background-color: #eef2f8;
+  font-weight: 700;
+  font-size: 1.25em;
 }
 
 cite {
@@ -141,7 +137,7 @@ cite {
   margin-top: 0.125em;
 
   font-family: $font-body;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
 
   &:before {
@@ -154,24 +150,6 @@ ol, ul {
   padding: 0;
 }
 
-pre,
-code {
-    overflow: auto;
-    border-radius: 3px;
-    font-size: 1em;
-    border: 1px solid $color-alpha;
-    > code {
-      border: none;
-    }
-}
-
-pre {
-  padding: 1em;
-}
-code {
-  padding: 0.1em;
-}
-
 /**
  * Text Selection
  */
@@ -179,11 +157,4 @@ code {
   color: $color-white;
   background-color: $color-alpha;
   text-shadow: none;
-}
-
-hr {
-  width: 70%;
-  border: 0; 
-  height: 1px; 
-  background-image: linear-gradient(left, #f0f0f0, #8c8c8c, #f0f0f0);
 }
