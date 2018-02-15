@@ -43,7 +43,7 @@
         li {
             display: inline;
             float: left;
-            margin-right: 0.4em;
+            margin-right: 0.8em;
         }
         a {
             &:hover {
@@ -62,7 +62,7 @@
 }
 
 
-// To clear things when we float the element inisde nav and ul 
+// To clear things when we float the element inisde nav and ul
 .clear {
     *zoom: 1;
 
