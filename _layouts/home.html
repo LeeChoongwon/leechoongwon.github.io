@@ -13,7 +13,7 @@ layout: default
   <div class="posts">
     {% for post in paginator.posts %}
     <div class="post-teaser">
-      {% if post.thumbnail %} 
+      {% if post.thumbnail %}
       <div class="post-img">
          <img src="{{ site.baseurl }}/{{ post.thumbnail }}">
       </div>
@@ -26,14 +26,26 @@ layout: default
               </a>
             </h1>
             <p class="meta">
-              {{ post.date | date: "%B %-d, %Y" }}
+              {{ post.date | date: "%B %-d, %Y" }}{% include tag-list.html tags=post.categories meta=site.featured_categories start_with="in " separator=" / " %}
+            </p>
+            <p class="meta_time">
+            <i class="fa fa-clock fa-fw"></i>
+            {% assign words = post.content | number_of_words %}
+            {% if words < 270 %}
+            1min
+            {% else %}
+            {{ words | divided_by:180 }}mins
+            {% endif %}
+
+            <a href="{{ site.url }}{{ post.url }}#disqus_thread"></a>.
+
             </p>
           </header>
           <div class="excerpt">
-            {{ post.content | strip_html | truncate: "250" }}
-            <!--<a class="button" href="{{ post.url | prepend: site.baseurl }}">
+            {{ post.excerpt }}
+            <a class="continue_button" href="{{ post.url | prepend: site.baseurl }}">
               {{ site.theme_settings.str_continue_reading }}
-            </a>-->
+            </a>
           </div>
       </span>
     </div>
