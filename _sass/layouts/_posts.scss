@@ -56,7 +56,14 @@ header {
 .meta_time {
     color: rgba($text-color, .5);
     font-size: 0.9em;
-    letter-spacing: 0.1em;
+    // letter-spacing: 0.1em;
+    margin: 0;
+}
+
+.comment_count {
+    color: rgba($text-color, .5);
+    font-size: 0.9em;
+    // letter-spacing: 0.1em;
     margin: 0;
 }
 

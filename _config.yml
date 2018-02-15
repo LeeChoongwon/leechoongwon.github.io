@@ -21,7 +21,7 @@ theme_settings:
 
   # Icons
   rss: true
-  email_address: # Full email address, e.g. "sam@example.com"
+  email_address: "leechoong.kr@gmail.com"
   behance:
   bitbucket:
   dribbble:
@@ -73,7 +73,7 @@ theme_settings:
   post_navigation: true
 
 # PAGINATION
-paginate: 8
+paginate: 6
 paginate_path: "/page:num"
 
 # PORTFOLIO
