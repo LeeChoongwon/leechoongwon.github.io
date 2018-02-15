@@ -2,7 +2,7 @@
 
 // ==========================================================================
 //   Syntax highlighting
-// ========================================================================== 
+// ==========================================================================
 
 div.highlighter-rouge,
 figure.highlight {
@@ -33,7 +33,7 @@ figure.highlight {
         &.gutter,
         &.rouge-gutter {
             padding-right: 1em;
-            width: 1em;
+            width: 1.5em;
             color: $base04;
             border-right: 1px solid $base04;
             text-align: right
@@ -54,7 +54,7 @@ figure.highlight {
 .highlight pre{ width:100%}
 .highlight .hll{ background-color:$base06}
 
-.highlight{ 
+.highlight{
  .c{ /* Comment */ color:$base04}
  .err{ /* Error */ color:$base08}
  .k{ /* Keyword */ color:$base0e}

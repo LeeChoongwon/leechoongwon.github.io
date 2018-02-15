@@ -4,16 +4,16 @@ A free and open-source [Jekyll](https://jekyllrb.com) theme. Based on Rohan Chan
 
 * Responsive design
 * Portfolio page for your projects
-* Tags compability
+* categories compability
 * Bootstrap : [Get Bootstrap](http://getbootstrap.com/)
 * Search feature : [Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search)
 * Math Rendering : [KateX](https://github.com/Khan/KaTeX)
-* Seo Tags : [Jekyll-seo-tag](https://help.github.com/articles/search-engine-optimization-for-github-pages/)
+* Seo categories : [Jekyll-seo-tag](https://help.github.com/articles/search-engine-optimization-for-github-pages/)
 * Syntax Highlighting: Easily customable [Base16](https://github.com/chriskempson/base16)
 * Free of rights images from [pexels](https://www.pexels.com/)
 
 > [Demo](https://sylhare.github.io/Type-on-Strap/)
- 
+
 [![Default Type on Strap blog](https://github.com/Sylhare/Type-on-Strap/blob/master/screenshot.png?raw=true)](https://sylhare.github.io/Type-on-Strap/)
 
 ## Table of Contents
@@ -46,9 +46,9 @@ jekyll-theme-basically-basic
 ├── _layouts                   # theme layouts (see below for details)
 ├── _portofolio	               # collection of article to be populated in the portfolio page
 ├── _posts                     # Blog posts
-├── _sass                      # Sass partials 
+├── _sass                      # Sass partials
 ├── assets
-|  ├── js	               # theme javascript, Katex, jquery, bootstrap, jekyll search, 
+|  ├── js	               # theme javascript, Katex, jquery, bootstrap, jekyll search,
 |  ├── css                     # isolated Bootstrap, font-awesome, katex and main css
 |  ├── fonts		       # Font-Awesome, Glyphicon, and other fonts
 |  └── img		       # Images used for the template
@@ -61,12 +61,12 @@ jekyll-theme-basically-basic
 ├── _config.yml                # sample configuration
 └── index.html                 # sample home page (blog page paginated)
 ```
-	
+
 ## Configure Type on Strap
 
 Open `_config.yml` in a text editor to change most of the blog's settings.
 
-If a variable in this document is marked as "optional", disable the feature by removing all text from the variable. 
+If a variable in this document is marked as "optional", disable the feature by removing all text from the variable.
 
 
 ### Site configuration
@@ -137,7 +137,7 @@ English text used in the theme has been grouped  so you can quickly translate th
 
 ### Other features
 
-Jekyll works with [liquid](https://shopify.github.io/liquid/) tags usually represented by:
+Jekyll works with [liquid](https://shopify.github.io/liquid/) categories usually represented by:
 
 ```
 {{ liquid.tag | filter }}
@@ -159,7 +159,7 @@ Display the site's icon from [Font Awesome](https://fortawesome.github.io/Font-A
 
 ### Comments (via Disqus)
 
-Optionally, if you have a [Disqus](https://disqus.com/) account, you can show a 
+Optionally, if you have a [Disqus](https://disqus.com/) account, you can show a
 comments section below each post.
 
 To enable Disqus comments, add your [Disqus shortname](https://help.disqus.com/customer/portal/articles/466208) to your project's `_config.yml` file:
@@ -171,7 +171,7 @@ To enable Disqus comments, add your [Disqus shortname](https://help.disqus.com/c
 
 ### Google Analytics
 
-To enable Google Analytics, add your [tracking ID](https://support.google.com/analytics/answer/1032385) 
+To enable Google Analytics, add your [tracking ID](https://support.google.com/analytics/answer/1032385)
 to `_config.yml` like so:
 
 ```yml
@@ -218,7 +218,7 @@ title: Hello World                                # Title of the page
 subtitle: "This is a subtitle"                    # A subtitle can be displayed below your title
 feature-img: "assets/img/sample.png"              # Add a feature-image to the post
 thumbnail: "assets/img/thumbnail/sample-th.png"   # Add a thumbnail image on blog view
-tags: [sample, markdown, html]
+categories: [sample, markdown, html]
 ---
 ```
 
@@ -231,12 +231,12 @@ The page layout have a bit more features explained here.
 ```yml
 ---
 layout: page
-title: "About" 
-subtitle: "This is a subtitle"   
-feature-img: "assets/img/sample.png" 
+title: "About"
+subtitle: "This is a subtitle"
+feature-img: "assets/img/sample.png"
 permalink: /about.html               # Set a permalink your your page
 hide: true                           # Prevent the page title to appear in the navbar
-tags: [sample, markdown, html]
+categories: [sample, markdown, html]
 ---
 ```
 
@@ -247,7 +247,7 @@ The hide only hides your page from the navigation bar, it is however still gener
 This is the page layout modified to have bootstrap activated to format your content accordingly with the theme.
 
 ```yml
---- 
+---
 layout: bootstrap
 ---
 ```
@@ -258,7 +258,7 @@ This layout includes the head, navigation bar and footer around your content.
 
 ## Feature pages
 
-All feature pages besides the "home" one are stored in the `page` folder, they will appear in the navigation bar unless you set `Hide: true` in the front matter. 
+All feature pages besides the "home" one are stored in the `page` folder, they will appear in the navigation bar unless you set `Hide: true` in the front matter.
 
 Here are the documentation for the other feature pages that can be added through `_config.yml`.
 
@@ -279,9 +279,9 @@ The portfolio page can be enable/disable in the navigation bar through the `_con
 
 ### Search
 
-The search feature is based on [Simple-Jekyll-search](https://github.com/christian-fei/Simple-Jekyll-Search) there is a `search.json` file that will create a list of all of the site posts, pages and portfolios. 
+The search feature is based on [Simple-Jekyll-search](https://github.com/christian-fei/Simple-Jekyll-Search) there is a `search.json` file that will create a list of all of the site posts, pages and portfolios.
 
-Then there's a `search.js` displaying the formated results entered in the `search.html` page. 
+Then there's a `search.js` displaying the formated results entered in the `search.html` page.
 
 
 The search page can be enable/disable in the navigation bar through the `_config.yml` via:
@@ -290,9 +290,9 @@ The search page can be enable/disable in the navigation bar through the `_config
   search: true
 ```
 
-### Tags
+### categories
 
-Tags should be placed between `[]` in your post metadata. Seperate each tag with a comma. Tags are recommended for posts and portfolio items.
+categories should be placed between `[]` in your post metadata. Seperate each tag with a comma. categories are recommended for posts and portfolio items.
 
 For example:
 
@@ -300,18 +300,18 @@ For example:
 ---
 layout: post
 title: Markdown and HTML
-tags: [sample, markdown, html]
+categories: [sample, markdown, html]
 ---
 ```
 
-> Tags are case sensitive `Tag_nAme` ≠ `tag_name`
+> categories are case sensitive `Tag_nAme` ≠ `tag_name`
 
-All the tags will be listed in `tags.html` with a link toward the pages or posts.
-The tags page can be enable/disable in the navigation bar through the `_config.yml` via:
+All the categories will be listed in `categories.html` with a link toward the pages or posts.
+The categories page can be enable/disable in the navigation bar through the `_config.yml` via:
 
 ```yml
 # Scripts / Feature
-  tags: true
+  categories: true
 ```
 
 ## Template as a Gem

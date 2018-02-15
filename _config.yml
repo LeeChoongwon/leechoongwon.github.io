@@ -1,11 +1,12 @@
 # SITE CONFIGURATION
 baseurl: ""
 url: "https://leechoongwon.github.io"
+permalink: /posts/:year/:title
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Type on Strap
+  title: 리충닷컴
   avatar: assets/img/triangle.svg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
@@ -16,7 +17,7 @@ theme_settings:
      <p>Change header text in <code>_config.yml</code> <br> to update this feature.</p>
   header_text_feature_image: assets/img/pexels/triangular.jpeg
   footer_text: >
-   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+   Powered by <a href="https://jekyllrb.com/">Jekyll</a>
 
   # Icons
   rss: true
@@ -45,11 +46,11 @@ theme_settings:
 
   # Scripts / Features
   google_analytics: # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname:
+  disqus_shortname: leechoong
   katex: true # Enable if using math markup
   portfolio: true
   search: true
-  tags: true
+  categories: true
 
 
   # Localization strings
@@ -71,7 +72,7 @@ theme_settings:
   post_navigation: true
 
 # PAGINATION
-paginate: 5
+paginate: 8
 paginate_path: "/page:num"
 
 # PORTFOLIO
@@ -88,4 +89,4 @@ sass:
   style: :compressed
 plugins: [jekyll-paginate, jekyll-seo-tag]
 theme: type-on-strap # If using the theme as a jekyll theme gem
-exclude: ["Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", "LICENSE", "README.md", "screenshot.png"]
+exclude: ["Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", "LICENSE", "README.md"]

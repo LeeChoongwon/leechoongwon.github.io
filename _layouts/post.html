@@ -10,11 +10,11 @@ layout: default
     </p>
   </header>
   <section class="post-content">{{ content }}</section>
-   
+
    <!-- Tag list -->
-  {% capture tag_list %}{{ page.tags | join: "|"}}{% endcapture %}
-  {% include tags_list.html tags=tag_list %}
-    
+  {% capture tag_list %}{{ page.categories | join: "|"}}{% endcapture %}
+  {% include categories_list.html categories=tag_list %}
+
 </article>
 
 <!-- Disqus -->

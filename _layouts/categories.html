@@ -4,44 +4,44 @@ layout: page
 
 <div class="home">
 
-<!-- cycles through posts to get tags -->
-{% assign rawtags = "" %}
+<!-- cycles through posts to get categories -->
+{% assign rawcategories = "" %}
 {% for post in site.posts %}
-{% assign post_tags = post.tags | join:'|' | append:'|' %}
-{% assign rawtags = rawtags | append:post_tags %}
+{% assign post_categories = post.categories | join:'|' | append:'|' %}
+{% assign rawcategories = rawcategories | append:post_categories %}
 {% endfor %}
 
-<!-- cycles through portfolio collection to get tags -->
-{% assign portfolio =  site.portfolio | map: 'tags' | join: ','  | split: ',' | uniq %}
+<!-- cycles through portfolio collection to get categories -->
+{% assign portfolio =  site.portfolio | map: 'categories' | join: ','  | split: ',' | uniq %}
 {% for tag in portfolio %}
-{% assign portfolio_tags = tag | join:'|' | append:'|' %}
-{% assign rawtags = rawtags | append:portfolio_tags %}
+{% assign portfolio_categories = tag | join:'|' | append:'|' %}
+{% assign rawcategories = rawcategories | append:portfolio_categories %}
 {% endfor %}
 
-<!-- cycles through pages to get tags -->
+<!-- cycles through pages to get categories -->
 {% for page in site.pages %}
-{% assign page_tags = page.tags | join:'|'  %}
-{% assign rawtags = rawtags | append:page_tags %}
+{% assign page_categories = page.categories | join:'|'  %}
+{% assign rawcategories = rawcategories | append:page_categories %}
 {% endfor %}    
     
-<!-- Displays the list of tags-->
-{% include tags_list.html tags=rawtags %}
+<!-- Displays the list of categories-->
+{% include categories_list.html categories=rawcategories %}
 
     <!-- Displays the posts and pages that contains the tag-->
     <div class="posts">
-        {% for tag in tags %}
+        {% for tag in categories %}
         <h3 id="{{ tag | cgi_escape }}" class="tag-anchor">
-            <a href="#{{ tag | cgi_escape }}"><i class="fa fa-tag fa-fw"></i> {{ tag }}</a>
+            <a href="#{{ tag | cgi_escape }}"><i class="fa fa-hashtag fa-fw"></i> {{ tag }}</a>
             <a href="#{{ page.title }}" style="float: right"><i class="fa fa-chevron-up" aria-hidden="true"> </i> </a>
 
         </h3>
 
-        <!-- Posts and collection for each tags -->
+        <!-- Posts and collection for each categories -->
         <div class="tag-posts">
 
             <!-- Pages -->
             {% for page in site.pages %} 
-                {% if page.tags contains tag %}
+                {% if page.categories contains tag %}
                 <h5 class="tag-title">
                     <a href="{{ page.url | prepend: site.baseurl }}">
                         <i class="fa fa-file-image-o" aria-hidden="true"></i>
@@ -57,7 +57,7 @@ layout: page
             
             <!-- Posts -->
             {% for post in site.posts %} 
-                {% if post.tags contains tag %}
+                {% if post.categories contains tag %}
                 <h5 class="tag-title">
                     <a href="{{ post.url | prepend: site.baseurl }}">
                         <i class="fa fa-file-text-o" aria-hidden="true"></i>
@@ -73,7 +73,7 @@ layout: page
             
             <!-- Portfolio -->
             {% for note in site.portfolio %} 
-                {% if note.tags contains tag %}
+                {% if note.categories contains tag %}
                 <h5 class="tag-title">
                     <a href="{{ site.baseurl }}{{ note.url }}">
                         <i class="fa fa-file-o" aria-hidden="true"></i>
