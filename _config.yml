@@ -1,25 +1,26 @@
 # Site settings
-email:
-paginate: 8
+email: 
+baseurl: ""
+paginate: 5
 paginate_path: "/blog/page-:num"
-timezone: Asia/Seoul
+google_analytics: 
 
 # SEO settings
-title: 리충 테스트
-description: 테스트중
-url: "https://leechoongwon.github.io"
-default_img: ""
+title: Trophy
+description: 
+url: ""
+twitter_username: 
+default_img: 
 
 # Profile settings
-name: 테스트
-profile_img: ""
-profile: ""
+name: 
+profile_img: 
+profile: 
 social:
-  github: ""
-  facebook: ""
+  github: 
 
 # Build settings
-exclude: ["Gemfile", "Gemfile.lock", "LICENSE.txt", "README.md"]
+exclude: ["_screenshots", "Gemfile", "Gemfile.lock", "LICENSE.txt", "README.md"]
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 
@@ -29,6 +30,3 @@ sass:
 
 # Gems
 gems: [jekyll-paginate, jekyll-sitemap, octopress-autoprefixer]
-
-# S3 Img
-static_url: ""
