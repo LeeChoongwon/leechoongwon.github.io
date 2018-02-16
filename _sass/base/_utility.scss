@@ -30,10 +30,10 @@
 }
 
 .continue_button {
-    border-radius: 0.3em;
-    border: 1px solid white;
+    // border-radius: 0.3em;
+    // border: 1px solid white;
     display: inline-block;
-    margin: 1em 0;
+    margin: 0.5em 0;
     padding: 0.25em 0.25em;
     // float: right;
 }
@@ -44,10 +44,10 @@ a.continue_button {
 
 .continue_button-link {
     &:hover {
-        background: $link-color;
-        border: 1px solid $link-color;
-        color: $background-color;
-        text-decoration: none;
+        // background: $link-color;
+        // border: 1px solid $link-color;
+        color: $link-color;
+        font-weight: bold;
     }
 }
 
@@ -66,10 +66,38 @@ a.button {
 
 .body-link {
     &:hover {
-        text-decoration: underline;
-        color: darken($link-color, 15%);
+        // text-decoration: underline;
+        // color: darken($link-color, 15%);
+        background: $link-color;
+        border: 1px solid $link-color;
+        border-radius: 10%;
+        color: $background-color;
+        text-decoration: none;
     }
 }
+
+.cat_button {
+    border-radius: 0.3em;
+    border: 1px solid;
+    display: inline-block;
+    // margin: 1em 0;
+    padding: 0.1em 0.1em;
+}
+
+a.cat_button {
+    @extend .cat_button-link;
+}
+
+.cat_button-link {
+    &:hover {
+        background: $link-color;
+        border: 1px solid $link-color;
+        color: $background-color;
+        text-decoration: none;
+    }
+}
+
+
 
 .post-link {
     &:hover {
