@@ -11,9 +11,13 @@ layout: default
   </header>
   <section class="post-content">{{ content }}</section>
 
-   <!-- Tag list -->
-  {% capture tag_list %}{{ page.categories | join: "|"}}{% endcapture %}
-  {% include categories_list.html categories=tag_list %}
+  <!-- Category list -->
+ {% capture tag_list %}{{ page.categories | join: "|"}}{% endcapture %}
+ {% include categories_list_post.html categories=tag_list %}
+
+
+  <!-- Social share -->
+  {% include social_share.html %}
 
 </article>
 

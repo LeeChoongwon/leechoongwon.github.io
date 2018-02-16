@@ -1,0 +1,129 @@
+---
+---
+
+@import "base/variables";
+
+/* share */
+.page-share {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+  font-size: 0.75em;
+}
+
+.facebook-btn {
+  border: 1px solid;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 10px;
+  background-color: $facebook-color;
+  color: white;
+
+}
+
+a.facebook-btn {
+    @extend .facebook-btn-link;
+}
+
+.facebook-btn-link {
+    &:hover {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+
+
+.twitter-btn {
+  border: 1px solid;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 10px;
+  background-color: $twitter-color;
+  color: white;
+}
+
+a.twitter-btn {
+    @extend .twitter-btn-link;
+}
+
+.twitter-btn-link {
+    &:hover {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+
+
+.linkedin-btn {
+  border: 1px solid;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 10px;
+  background-color: $linkedin-color;
+  color: white;
+}
+
+a.linkedin-btn {
+    @extend .linkedin-btn-link;
+}
+
+.linkedin-btn-link {
+    &:hover {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+
+
+.reddit-btn {
+  border: 1px solid;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 10px;
+  background-color: $reddit-color;
+  color: white;
+}
+
+a.reddit-btn {
+    @extend .reddit-btn-link;
+}
+
+.reddit-btn-link {
+    &:hover {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+
+
+.home-cat-button {
+    // border-radius: 0.3em;
+    // border: 1px solid white;
+    display: inline-block;
+    // margin: 0.1em 0;
+    // padding: 0.25em 0.25em;
+    // float: right;
+}
+
+a.home-cat-button {
+    @extend .home-cat-button-link;
+}
+
+.home-cat-button-link {
+    &:hover {
+        color: $link-color;
+        font-weight: bold;
+    }
+}

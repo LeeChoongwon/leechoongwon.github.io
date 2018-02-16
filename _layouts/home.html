@@ -26,19 +26,14 @@ layout: default
               </a>
             </h1>
             <p class="meta">
-              <!-- {{ post.date | date: "%B %-d, %Y" }} -->
-              {% include tag-list.html tags=post.categories start_with="in " separator=" / " %}
-              <!-- {% for tag in post.categories %}
-                <a class="button" href="{{site.baseurl}}/categories#{{tag}}">
-                  <p><i class="fab fa-slack-hash fa-fw"></i> {{ tag }}</p>
-                </a>
-              {% endfor %} -->
+              {% capture tag_list %}{{ post.categories | join: "|"}}{% endcapture %}
+              {% include categories_list_home.html categories=tag_list %}
             </p>
             <p class="meta_time" style="float:right;">
-            <i class="far fa-calendar-alt fa-fw" style="color:green;"></i>
+            <i class="far fa-calendar-alt fa-fw" style="color:#008000;"></i>
               {{ post.date | date: "%b %-d, %Y" }}
               <br>
-            <i class="far fa-clock fa-fw" style="color:green;"></i>
+            <i class="far fa-clock fa-fw" style="color:#008000;"></i>
             {% assign words = post.content | number_of_words %}
             {% if words < 180 %}
             ~1 min
@@ -48,7 +43,7 @@ layout: default
             {{ words | divided_by:180 }} mins
             {% endif %}
             <br>
-            <i class="far fa-comment-alt fa-fw" style="color:green;"></i>
+            <i class="far fa-comment-alt fa-fw" style="color:#008000;"></i>
             <a class="comment_count" href="{{ site.url }}{{ post.url }}#disqus_thread"></a>
 
             </p>

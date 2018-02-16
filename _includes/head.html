@@ -10,6 +10,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css">
     <link href='{{ site.baseurl }}/assets/css/SpoqaHanSans-Kr.css' rel='stylesheet' type='text/css'>
 
     <!--Favicon-->
@@ -68,9 +69,15 @@
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.theme_settings.description }}{% endif %}">
     -->
 
+    <!-- fonts -->
     <style media="screen">
     * { font-family: 'Spoqa Han Sans', 'Sans-serif';}
     </style>
 
+
+    <!-- disqus comment count -->
     <script id="dsq-count-scr" src="//{{ site.theme_settings.disqus_shortname }}.disqus.com/count.js" async></script>
+
+    <!-- crisp -->
+    <script type="text/javascript"> window.$crisp=[];window.CRISP_WEBSITE_ID="6b434683-0e22-4ab3-b2cb-5646507faa2a";(function(){ d=document;s=d.createElement("script"); s.src="https://client.crisp.chat/l.js"; s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})(); </script>
 </head>
