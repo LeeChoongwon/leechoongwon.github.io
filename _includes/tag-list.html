@@ -13,11 +13,11 @@
 
     {% assign tag = meta | where: "slug", tag_slug | first %}
 
-    {% if tag %}
-      {% capture content_temp %}{{ content }}<a href="{{ tag.url | relative_url }}" data-flip="title">{{ tag.title }}</a>{{ iter_separator }}{% endcapture %}
-    {% else %}
-      {% capture content_temp %}{{ content }}<span>{{ tag_slug | capitalize }}</span>{{ iter_separator }}{% endcapture %}
-    {% endif %}
+    <!-- {% if tag %}
+      {% capture content_temp %}{{ content }}<a href="{{ site.url }}" data-flip="title">{{ tag.title }}</a>{{ iter_separator }}{% endcapture %}
+    {% else %} -->
+      {% capture content_temp %}{{ content }}<a class="button" href="{{ site.url }}/categories#{{ tag_slug }}"><i class="fab fa-slack-hash fa-fw"></i> {{ tag_slug | capitalize }}</a>{{ iter_separator }}{% endcapture %}
+    <!-- {% endif %} -->
 
     {% assign content = content_temp %}
 
@@ -26,3 +26,10 @@
 {% endif %}
 
 {{ content }}
+
+
+{% for tag in categories %}
+  <a class="button" href="{{site.baseurl}}/categories#{{tag}}">
+    <p><i class="fab fa-slack-hash fa-fw"></i> {{ tag }}</p>
+  </a>
+{% endfor %}

@@ -26,26 +26,36 @@ layout: default
               </a>
             </h1>
             <p class="meta">
-              {{ post.date | date: "%B %-d, %Y" }}{% include tag-list.html tags=post.categories meta=site.featured_categories start_with="in " separator=" / " %}
+              <!-- {{ post.date | date: "%B %-d, %Y" }} -->
+              {% include tag-list.html tags=post.categories start_with="in " separator=" / " %}
+              <!-- {% for tag in post.categories %}
+                <a class="button" href="{{site.baseurl}}/categories#{{tag}}">
+                  <p><i class="fab fa-slack-hash fa-fw"></i> {{ tag }}</p>
+                </a>
+              {% endfor %} -->
             </p>
-            <p class="meta_time">
-            <i class="far fa-clock fa-fw"></i>
+            <p class="meta_time" style="float:right;">
+            <i class="far fa-calendar-alt fa-fw" style="color:green;"></i>
+              {{ post.date | date: "%b %-d, %Y" }}
+              <br>
+            <i class="far fa-clock fa-fw" style="color:green;"></i>
             {% assign words = post.content | number_of_words %}
             {% if words < 180 %}
-            less than 1 minute read
+            ~1 min
             {% else if words < 270 %}
-            1 minute read
+            1 min
             {% else %}
-            {{ words | divided_by:180 }} minutes read
+            {{ words | divided_by:180 }} mins
             {% endif %}
-            <i class="far fa-comment-alt fa-fw"></i>
+            <br>
+            <i class="far fa-comment-alt fa-fw" style="color:green;"></i>
             <a class="comment_count" href="{{ site.url }}{{ post.url }}#disqus_thread"></a>
 
             </p>
           </header>
-          <div class="excerpt">
+          <div class="excerpt" style="width:70%">
             {{ post.excerpt }}
-              <a class="continue_button" href="{{ post.url | prepend: site.baseurl }}">{{ site.theme_settings.str_continue_reading }}</a>
+              <a class="continue_button" href="{{ post.url | prepend: site.baseurl }}">{{ site.theme_settings.str_continue_reading }}    <i class="fa fa-angle-right fa-lg"></i></a>
           </div>
       </span>
     </div>

@@ -8,10 +8,10 @@
         {% elsif include.categories.size > 1 %}
           <div class="meta">categories</div>
         {% endif %}
-            
+
         {% for tag in categories %}
           <a class="button" href="{{site.baseurl}}/categories#{{tag}}">
-            <p><i class="fa fa-hashtag fa-fw"></i> {{ tag }}</p>
+            <p><i class="fab fa-slack-hash fa-fw"></i> {{ tag }}</p>
           </a>
         {% endfor %}
         </div>

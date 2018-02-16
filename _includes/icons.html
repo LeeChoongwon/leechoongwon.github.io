@@ -1,7 +1,10 @@
 {% if site.theme_settings.rss %}
 <li>
 	<a href="{{ site.url }}//{{ site.baseurl }}//feed.xml" title="{{ site.theme_settings.str_rss_follow }}">
-    <i class="fa fa-rss-square fa-lg"></i>
+		<span class="fa-stack fa-lg">
+						<i class="fa fa-circle fa-stack-2x"></i>
+    				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+		</span>
 	</a>
 </li>
 {% endif %}
@@ -75,7 +78,10 @@
 {% if site.theme_settings.github %}
 <li>
 	<a href="https://github.com/{{ site.theme_settings.github }}" title="{{ site.theme_settings.str_follow_on }} GitHub">
-    <i class="fab fa-github fa-lg"></i>
+		<span class="fa-stack fa-lg">
+						<i class="fa fa-circle fa-stack-2x"></i>
+    <i class="fab fa-github-alt fa-stack-1x fa-inverse"></i>
+		        </span>
 	</a>
 </li>
 {% endif %}
