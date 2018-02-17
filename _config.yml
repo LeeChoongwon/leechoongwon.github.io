@@ -7,7 +7,7 @@ permalink: /posts/:year/:title
 theme_settings:
   # Meta
   title: 리충닷컴
-  avatar: assets/img/main.svg
+  avatar: assets/img/main.png
   favicon: assets/favicon.ico
   description: "나의 관심 블로그"
 

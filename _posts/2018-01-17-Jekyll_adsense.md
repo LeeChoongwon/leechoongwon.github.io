@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Jekyll 블로그 애드센스 승인받기 (포스팅 22개로 성공)
+title:  Jekyll 애드센스 승인받기 (포스팅 22개)
 categories:
   - Jekyll
   - Adsense
