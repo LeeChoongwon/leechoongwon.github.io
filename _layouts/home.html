@@ -29,24 +29,33 @@ layout: default
               {% capture tag_list %}{{ post.categories | join: "|"}}{% endcapture %}
               {% include categories_list_home.html categories=tag_list %}
             </p>
+
+            <!-- info -->
             <p class="meta_time" style="float:right;">
             <i class="far fa-calendar-alt fa-fw" style="color: #ff4500;"></i>
               {{ post.date | date: "%b %-d, %Y" }}
               <br>
             <i class="far fa-clock fa-fw" style="color: #ff4500;"></i>
             {% assign words = post.content | number_of_words %}
-            {% if words < 180 %}
-            ~1 min
-            {% else if words < 270 %}
-            1 min
+            {% if words < 240 %} 1 min
             {% else %}
-            {{ words | divided_by:180 }} mins
+              {{ words | divided_by:120 }} mins
             {% endif %}
             <br>
             <i class="far fa-comment-alt fa-fw" style="color: #ff4500;"></i>
             <a class="comment_count" href="{{ site.url }}{{ post.url }}#disqus_thread"></a>
+            <br>
+            {% if post.update %}
+            <i class="far fa-edit fa-fw" style="color: #ff4500;"></i>
+            updated
+            {% endif %}
+
 
             </p>
+
+
+
+
           </header>
           <div class="excerpt" style="width:70%">
             {{ post.excerpt }}

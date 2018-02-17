@@ -147,3 +147,30 @@ code.highlighter-rouge {
 p {
   line-height: 160%;
 }
+
+
+@media screen and (max-width: $sm-break) {
+  a.home-cat-button {
+     font-size: 1.25em;
+  }
+
+  a.continue_button {
+     font-size: 0.75em;
+  }
+
+  .meta {
+    font-size: 0.7em;
+  }
+
+  .call-out {
+    font-size: 0.9em !important;
+  }
+
+  tr {
+    font-size: 0.5em;
+  }
+
+  figcaption {
+    font-size: 0.75em !important;
+  }
+}
