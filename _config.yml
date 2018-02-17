@@ -14,10 +14,10 @@ theme_settings:
 
   # Header and footer text
   header_text: > #two or three lines to describe your site
-     <p><br><code> >>> print('leechoong.com')</br> >>> leechoong.com</code></p>
-  header_text_feature_image: assets/img/pexels/triangular.jpeg
+     "Have the courage to follow your heart and intuition." <br> ― Steve Jobs
+  header_text_feature_image: assets/img/header1.jpeg
   footer_text: >
-   Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://pages.github.com/">Github Pages</a>
+    Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://pages.github.com/">Github Pages</a><br>&copy; 2018. by Lee Choongwon
 
   # Icons
   rss: true

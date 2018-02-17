@@ -21,7 +21,7 @@ visible: 1
 ## Markdown 이란?
 
 <figure>
-<img src="/assets/posts/20171204/101.png" width="200" align="middle">
+<img src="/assets/posts/20171204/101.png" align="middle">
 <figcaption align="middle">
 &uarr;Markdown logo
 </figcaption>

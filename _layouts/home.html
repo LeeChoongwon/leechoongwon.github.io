@@ -15,7 +15,7 @@ layout: default
     <div class="post-teaser">
       {% if post.thumbnail %}
       <div class="post-img">
-         <img src="{{ site.baseurl }}/{{ post.thumbnail }}">
+         <img src="{{ site.baseurl }}/assets/img/{{ post.thumbnail }}">
       </div>
       {% endif %}
       <span>
@@ -30,10 +30,10 @@ layout: default
               {% include categories_list_home.html categories=tag_list %}
             </p>
             <p class="meta_time" style="float:right;">
-            <i class="far fa-calendar-alt fa-fw" style="color:#008000;"></i>
+            <i class="far fa-calendar-alt fa-fw" style="color: #ff4500;"></i>
               {{ post.date | date: "%b %-d, %Y" }}
               <br>
-            <i class="far fa-clock fa-fw" style="color:#008000;"></i>
+            <i class="far fa-clock fa-fw" style="color: #ff4500;"></i>
             {% assign words = post.content | number_of_words %}
             {% if words < 180 %}
             ~1 min
@@ -43,7 +43,7 @@ layout: default
             {{ words | divided_by:180 }} mins
             {% endif %}
             <br>
-            <i class="far fa-comment-alt fa-fw" style="color:#008000;"></i>
+            <i class="far fa-comment-alt fa-fw" style="color: #ff4500;"></i>
             <a class="comment_count" href="{{ site.url }}{{ post.url }}#disqus_thread"></a>
 
             </p>

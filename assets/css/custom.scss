@@ -127,3 +127,23 @@ a.home-cat-button {
         font-weight: bold;
     }
 }
+
+
+figcaption {
+  color: rgba($text-color, .5);
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+code.highlighter-rouge {
+  border: 2px solid #d82485;
+  font-size: 89%;
+  border-radius: 5px;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+}
+
+p {
+  line-height: 160%;
+}
