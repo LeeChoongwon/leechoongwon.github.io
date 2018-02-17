@@ -3,6 +3,14 @@ layout: page
 ---
 
 <div class="home">
+  <div class="legend">
+    <i class="far fa-file-alt" aria-hidden="true"></i> post
+    <i class="far fa-file" aria-hidden="true"></i> portfolio
+    <i class="far fa-file-image" aria-hidden="true"></i> page
+    <i class="far fa-calendar-alt" aria-hidden="true" style="color:#ff4500"></i> post date
+    <i class="fa fa-check" aria-hidden="true" style="color:red;"></i> modified
+  </div>
+
 
 <!-- cycles through posts to get categories -->
 {% assign rawcategories = "" %}
@@ -26,13 +34,6 @@ layout: page
 
 <!-- Displays the list of categories-->
 {% include categories_list.html categories=rawcategories %}
-<div class="legend" style="text-align:center;">
-  <i class="far fa-file-alt" aria-hidden="true"></i> post <br>
-  <i class="far fa-file" aria-hidden="true"></i> portfolio <br>
-  <i class="far fa-file-image" aria-hidden="true"></i> page
-  <i class="far fa-calendar-alt" aria-hidden="true" style="color:#ff4500"></i> updated
-</div>
-
 
 
     <!-- Displays the posts and pages that contains the tag-->
@@ -54,12 +55,13 @@ layout: page
                     <a class="tag-name" href="{{ page.url | prepend: site.baseurl }}">
                         <i class="far fa-file-image" aria-hidden="true"></i>
                         {{ page.title }}
-
-
+                    </a>
                     <div class="meta">
+                      {% if post.update %}
+                      <i class="fa fa-check" aria-hidden="true" style="color:red;"></i>
+                      {% endif %}
                         <i class="far fa-calendar-alt" aria-hidden="true" style="color:#ff4500"></i> {{ "today" | date: "%b %-d, %Y" }}
                     </div>
-                    </a>
                 </li>
                 {% endif %}
             {% endfor %}
@@ -71,12 +73,13 @@ layout: page
                     <a class="tag-name" href="{{ post.url | prepend: site.baseurl }}">
                         <i class="far fa-file-alt" aria-hidden="true"></i>
                         {{ post.title }}
-
-
+                    </a>
                     <div class="meta">
+                      {% if post.update %}
+                      <i class="fa fa-check" aria-hidden="true" style="color:red;"></i>
+                      {% endif %}
                         <i class="far fa-calendar-alt" aria-hidden="true" style="color:#ff4500"></i> {{ post.date | date: "%b %-d, %Y" }}
                     </div>
-                      </a>
                 </li>
                 {% endif %}
             {% endfor %}
@@ -88,12 +91,13 @@ layout: page
                     <a class="tag-name" href="{{ site.baseurl }}{{ note.url }}">
                         <i class="far fa-file" aria-hidden="true"></i>
                         {{ note.title }}
-
-
+                    </a>
                     <div class="meta">
+                      {% if post.update %}
+                      <i class="far fa-check-square" aria-hidden="true" style="color:red;"></i>
+                      {% endif %}
                         <i class="far fa-calendar-alt" aria-hidden="true" style="color:#ff4500"></i>  {{ note.date | date: "%b %-d, %Y" }}
                     </div>
-                      </a>
                 </li>
                 {% endif %}
             {% endfor %}
