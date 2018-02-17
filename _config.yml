@@ -7,10 +7,9 @@ permalink: /posts/:year/:title
 theme_settings:
   # Meta
   title: 리충닷컴
-  avatar: assets/img/triangle.svg
+  avatar: assets/img/main.svg
   favicon: assets/favicon.ico
-  gravatar: # Email MD5 hash
-  description: "A website with blog posts and pages" # used by search engines
+  description: "관심 블로그" # used by search engines
 
   # Header and footer text
   header_text: > #two or three lines to describe your site
@@ -30,7 +29,7 @@ theme_settings:
   gitlab:
   github: "leechoong"
   google_plus:
-  instagram:
+  instagram: "leechoong.kr"
   keybase:
   linkedin:  # Full URL
   pinterest:
