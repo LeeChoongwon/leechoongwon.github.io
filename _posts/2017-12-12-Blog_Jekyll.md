@@ -11,11 +11,6 @@ visible: 1
 
 지금 이 블로그도 Jekyll을 Github Page와 연동해 운영하는 것이다. Jekyll에 대해 알아보자.
 
-## 목차
-{:.no_toc}
-
-0. toc
-{:toc}
 
 ## Intro
 ### Jekyll 의 장단점

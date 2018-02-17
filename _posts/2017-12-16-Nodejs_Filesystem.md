@@ -10,11 +10,6 @@ visible: 1
 
 npm `fs` 를 활용한 기본적인 파일 입출력을 정리합니다.
 
-## 목차
-{:.no_toc}
-
-0. toc
-{:toc}
 
 ## Intro
 fs는 file system으로 node.js환경에서 파일시스템에 접근, 사용할 수 있게 해 주는 npm 이다.

@@ -11,11 +11,6 @@ visible: 1
 
 지난번에  MySQL과 php5의 연동에 대해 작성했었는데, 그때 사용한 mysql보다 mysqli을 사용하는 추세라 mysqli예제를 간단히 다뤄보겠습니다.
 
-## 목차
-{:.no_toc}
-
-0. toc
-{:toc}
 
 ## mysqli
 php7으로 업데이트 되면서, mysql 보다 mysqli 사용이 더 권장되고 있습니다. <br />

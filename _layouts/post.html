@@ -4,9 +4,21 @@ layout: default
 <article {% if page.feature-img %}class="feature-image"{% endif %}>
   <header id="main" style="background-image: url('{{ site.baseurl }}/assets/img/{{ page.feature-img }}')">
     <h1 id="{{ page.title | cgi_escape }}" class="title">{{ page.title }}</h1>
-    <p class="meta">
-    {{ page.date | date: "%B %-d, %Y" }}
-    {% if page.author %} - {{ page.author }}{% endif %}
+    <p class="meta_time">
+      <i class="fa fa-user fa-fw" style="color:#349840;"></i>
+      {% if page.author %}
+      {{ page.author }}
+      {% else %}
+      {{ site.name }}
+      {% endif %}
+      <i class="far fa-calendar-alt fa-fw" style="color: #ff4500;"></i>
+      {{ page.date | date: "%b %-d, %Y" }}
+      <i class="far fa-clock fa-fw" style="color: #ff4500;"></i>
+      {% assign words = content | number_of_words %}
+      {% if words < 240 %} 1 min
+      {% else %}
+        {{ words | divided_by:120 }} mins
+      {% endif %}
     </p>
   </header>
   <section class="post-content">{{ content }}</section>

@@ -11,11 +11,6 @@ visible: 1
 
 private api도 사용해보자
 
-## 목차
-{:.no_toc}
-
-0. toc
-{:toc}
 
 ## 빗썸 api 가져오기
 빗썸 홈페이지 api메뉴에 접속합니다. <br />

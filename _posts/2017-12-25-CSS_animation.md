@@ -10,11 +10,6 @@ visible: 1
 
 CSS로 애니메이션 효과를?
 
-## 목차
-{:.no_toc}
-
-0. toc
-{:toc}
 
 ## CSS 애니메이션
 

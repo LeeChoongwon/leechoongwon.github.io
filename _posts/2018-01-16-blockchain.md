@@ -11,11 +11,6 @@ visible: 1
 
 4차산업혁명을 선도할 기술 중 하나인 블록체인 기술과 비트코인에 대해 알아봅시다.
 
-## 목차
-{:.no_toc}
-
-0. toc
-{:toc}
 
 <figure>
 <img src="/assets/posts/20180116/101.png" width="600">

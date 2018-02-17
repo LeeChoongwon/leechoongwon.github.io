@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Node.js로 멜론 순위 차트 데이터 파싱
-categories: 
+categories:
   - Node.JS
 date: 2017-12-11 00:00:03 +09:00
 comments: true
@@ -10,11 +10,6 @@ visible: 1
 
 `Melon (멜론)`이 언제부터인지 신규 API의 신청을 받지 않고 있다. 개인적으로 진행하고 있는 프로젝트에 멜론 실시간 순위 데이터를 가져오고 싶어서 알아보던 중 데이터 크롤링을 할 수 있는 `npm package`을 알게되어 소개하고자 한다.
 
-## 목차
-{:.no_toc}
-
-0. toc
-{:toc}
 
 ## Intro
 ### 준비

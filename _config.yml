@@ -2,6 +2,7 @@
 baseurl: ""
 url: "https://leechoongwon.github.io"
 permalink: /posts/:year/:title
+name: Lee Choongwon
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
@@ -81,6 +82,8 @@ collections:
 
 # BUILD SETTINGS
 markdown: kramdown
+kramdown:
+  parse_block_html: true
 highlighter: rouge
 sass:
   sass_dir: _sass

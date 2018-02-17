@@ -11,11 +11,6 @@ visible: 1
 
 MySQL의 기본 명령어들을 정리한다. 생성, 삽입, 조회, 수정, 삭제
 
-## 목차
-{:.no_toc}
-
-0. toc
-{:toc}
 
 ## MySQL 접속
 필자는 `MAMP Stack(Mac Apache, MySQL, Php)`을 설치하여 사용한다. 이 환경 기준으로 정리할 예정이다. <br />

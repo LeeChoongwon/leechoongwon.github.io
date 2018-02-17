@@ -10,11 +10,6 @@ visible: 1
 
 파이썬(Python) 이란?
 
-## 목차
-{:.no_toc}
-
-0. toc
-{:toc}
 
 ## 파이썬
 ### intro

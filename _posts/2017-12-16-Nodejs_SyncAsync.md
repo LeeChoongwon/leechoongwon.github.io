@@ -11,11 +11,6 @@ visible: 1
 
 Node.js와 Javascript를 공부하다보면 `동기(synchronous)` 와 `비동기(asynchronous)`를 자주 접하게 됩니다. 차이와 활용예시에 대해 정리 해봅니다.
 
-## 목차
-{:.no_toc}
-
-0. toc
-{:toc}
 
 ## 동기 vs 비동기
 Synchronous: <br/>
