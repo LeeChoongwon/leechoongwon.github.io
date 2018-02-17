@@ -9,10 +9,10 @@ theme_settings:
   title: 리충닷컴
   avatar: assets/img/main.svg
   favicon: assets/favicon.ico
-  description: "관심 블로그" # used by search engines
+  description: "나의 관심 블로그"
 
   # Header and footer text
-  header_text: > #two or three lines to describe your site
+  header_text: >
      "Have the courage to follow your heart and intuition." <br> ― Steve Jobs
   header_text_feature_image: assets/img/header1.png
   footer_text: >
@@ -44,7 +44,7 @@ theme_settings:
   youtube:
 
   # Scripts / Features
-  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  google_analytics: # Tracking ID
   disqus_shortname: leechoong
   katex: true # Enable if using math markup
   portfolio: true
@@ -64,9 +64,7 @@ theme_settings:
   str_javascript_required_disqus: "Please enable JavaScript to view comments."
 
   # Colours, typography and padding
-  # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts:
-  # google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
+  google_fonts: # "Source+Sans+Pro:400,700,700italic,400italic"
 
   # Post navigation
   post_navigation: true
