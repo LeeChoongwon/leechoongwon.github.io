@@ -163,6 +163,17 @@ a.tag-name {
   font-weight: bold;
 }
 
+a.navpost {
+  @extend .navpost-link;
+}
+
+.navpost-link {
+    &:hover {
+        color: $link-color;
+        font-weight: bold;
+    }
+}
+
 
 @media screen and (max-width: $sm-break) {
   a.home-cat-button {
@@ -193,7 +204,7 @@ a.tag-name {
     font-size: 0.6em;
   }
 
-  pre {
-    overflow-x: auto;
+  .post-nav-post {
+    font-size: 0.8em;
   }
 }
