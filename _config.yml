@@ -15,7 +15,7 @@ theme_settings:
   # Header and footer text
   header_text: > #two or three lines to describe your site
      "Have the courage to follow your heart and intuition." <br> ― Steve Jobs
-  header_text_feature_image: assets/img/header1.jpeg
+  header_text_feature_image: assets/img/header1.png
   footer_text: >
     Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://pages.github.com/">Github Pages</a><br>&copy; 2018. by Lee Choongwon
 
