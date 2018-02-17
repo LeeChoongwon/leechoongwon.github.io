@@ -148,6 +148,15 @@ p {
   line-height: 160%;
 }
 
+.tag-title {
+  list-style-type: none;
+}
+
+a.tag-name {
+  color: black;
+  font-weight: bold;
+}
+
 
 @media screen and (max-width: $sm-break) {
   a.home-cat-button {

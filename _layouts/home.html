@@ -44,13 +44,11 @@ layout: default
             <br>
             <i class="far fa-comment-alt fa-fw" style="color: #ff4500;"></i>
             <a class="comment_count" href="{{ site.url }}{{ post.url }}#disqus_thread"></a>
-            <br>
+            <!-- <br>
             {% if post.update %}
-            <i class="far fa-edit fa-fw" style="color: #ff4500;"></i>
-            updated
-            {% endif %}
-
-
+            <i class="far fa-plus-square fa-fw" style="color: #ff4500;"></i>
+              {{ post.update | date: "%b %-d, %Y" }}
+            {% endif %} -->
             </p>
 
 

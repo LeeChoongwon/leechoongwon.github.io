@@ -50,48 +50,51 @@ layout: page
             <!-- Pages -->
             {% for page in site.pages %}
                 {% if page.categories contains tag %}
-                <h5 class="tag-title">
-                    <a href="{{ page.url | prepend: site.baseurl }}">
+                <li class="tag-title">
+                    <a class="tag-name" href="{{ page.url | prepend: site.baseurl }}">
                         <i class="far fa-file-image" aria-hidden="true"></i>
-                        {{ page.title | strip_html | truncate: 20 }}
-                    </a>
+                        {{ page.title }}
+
 
                     <div class="meta">
-                        <i class="far fa-calendar-alt" aria-hidden="true" style="color:#ff4500"></i> {{ "today" | date: "%B %-d, %Y" }}
+                        <i class="far fa-calendar-alt" aria-hidden="true" style="color:#ff4500"></i> {{ "today" | date: "%b %-d, %Y" }}
                     </div>
-                </h5>
+                    </a>
+                </li>
                 {% endif %}
             {% endfor %}
 
             <!-- Posts -->
             {% for post in site.posts %}
                 {% if post.categories contains tag %}
-                <h5 class="tag-title">
-                    <a href="{{ post.url | prepend: site.baseurl }}">
+                <li class="tag-title">
+                    <a class="tag-name" href="{{ post.url | prepend: site.baseurl }}">
                         <i class="far fa-file-alt" aria-hidden="true"></i>
-                        {{ post.title | strip_html | truncate: 20 }}
-                    </a>
+                        {{ post.title }}
+
 
                     <div class="meta">
-                        <i class="far fa-calendar-alt" aria-hidden="true" style="color:#ff4500"></i> {{ post.date | date: "%B %-d, %Y" }}
+                        <i class="far fa-calendar-alt" aria-hidden="true" style="color:#ff4500"></i> {{ post.date | date: "%b %-d, %Y" }}
                     </div>
-                </h5>
+                      </a>
+                </li>
                 {% endif %}
             {% endfor %}
 
             <!-- Portfolio -->
             {% for note in site.portfolio %}
                 {% if note.categories contains tag %}
-                <h5 class="tag-title">
-                    <a href="{{ site.baseurl }}{{ note.url }}">
+                <li class="tag-title">
+                    <a class="tag-name" href="{{ site.baseurl }}{{ note.url }}">
                         <i class="far fa-file" aria-hidden="true"></i>
-                        {{ note.title | strip_html | truncate: 20 }}
-                    </a>
+                        {{ note.title }}
+
 
                     <div class="meta">
-                        <i class="far fa-calendar-alt" aria-hidden="true" style="color:#ff4500"></i>  {{ note.date | date: "%B %-d, %Y" }}
+                        <i class="far fa-calendar-alt" aria-hidden="true" style="color:#ff4500"></i>  {{ note.date | date: "%b %-d, %Y" }}
                     </div>
-                </h5>
+                      </a>
+                </li>
                 {% endif %}
             {% endfor %}
 
