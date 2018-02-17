@@ -219,7 +219,10 @@ hr {
  */
 
 pre {
+  -webkit-overflow-scrolling: touch;
   overflow: auto;
+  line-height: inherit;
+  word-wrap: normal;
 }
 
 /**
