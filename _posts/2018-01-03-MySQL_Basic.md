@@ -3,7 +3,6 @@ layout: post
 title: MySQL 기본 명령어
 categories:
   - MySQL
-  - PHP
 date: 2018-01-03 00:00:01 +09:00
 comments: true
 visible: 1

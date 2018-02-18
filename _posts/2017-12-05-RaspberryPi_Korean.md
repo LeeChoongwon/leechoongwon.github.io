@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Raspberry Pi 한글설정
+categories:
+  - RaspberryPi
 date: 2017-12-05 00:00:03 +09:00
 comments: true
 visible: 1
