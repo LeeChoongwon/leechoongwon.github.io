@@ -30,7 +30,7 @@ $ sudo raspi-config
 ```
 위 명령어를 입력하면
 <figure>
-<img src="/assets/posts/20171205/201.png" width="500" align="middle">
+<img src="/assets/posts/20171205/201.png" align="middle">
 <figcaption align="middle">
 &uarr;raspi-config
 </figcaption>

@@ -159,6 +159,10 @@ object,
 video {
     max-width: 100%;
     // padding: 0 0%;
+    max-width: 100%;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
 }
 
 img[align=left] {
